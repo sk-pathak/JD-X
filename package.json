@@ -1,0 +1,16 @@
+{
+  "name": "jd-x",
+  "version": "1.0.0",
+  "description": "openlake website",
+  "main": "home.hbs",
+  "scripts": {
+    "start": "nodemon src/app.js -e js,hbs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "hbs": "^4.2.0"
+  }
+}
