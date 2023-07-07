@@ -8,6 +8,9 @@ routes.get("/home", (req, res) => {
 routes.get("/projects", (req, res) => {
     res.render("projects");
 });
+routes.get("/project_1", (req, res) => {
+    res.render("project_1");
+});
 routes.get("/programs", (req, res) => {
     res.render("programs");
 });

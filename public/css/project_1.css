@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    background-image: url(resources\project\white_dots.png);
+    color: white;
+}
+
+.project_1 {
+    display: flex;
+
+    font-family: 'Rajdhani', sans-serif;
+}
+
+
+/* For image */
+.image_project_1 {
+
+    width: 20vw;
+    height: fit-content;
+
+}
+
+/* For content */
+.content_project_1 {
+
+    width: 80vw;
+    padding-left: 5.78125vw;
+    padding-right: 2vw;
+
+
+    /* heading */
+    .heading_project_1 h1 {
+        color: #1589FF;
+        font-size: 3.125rem;
+    }
+
+    .heading_project_1 h1 a {
+        font-size: 1rem;
+        color: #A9A9A9;
+    }
+
+    .heading_project_1 h3 {
+        color: #9A9A9A;
+        font-size: 1.5rem;
+    }
+
+    .about_project_1 {
+        font-size: 1.2rem;
+        margin-top: 5vh;
+    }
+
+    .subheading_project_1 {
+        font-size: 1.65rem;
+        margin-top: 2vw;
+        color: #FFFFFF;
+    }
+
+}
+
+.ss_project_1 {
+
+    padding-left: 5.78125vw;
+    padding-right: 2vw;
+    margin-bottom: 30px;
+
+    .subheading_project_1 {
+        font-size: 1.65rem;
+        margin-top: 2vw;
+
+        color: #FFFFFF;
+    }
+
+    img {
+        display: flex;
+    }
+
+    #screenshot_project_1 {
+        width: 43.125vw;
+        height: 49.586776859504134vhvh;
+
+        margin-top: 5vh;
+
+
+    }
+}
+
+.image_project_1 {
+    padding-left: 2.5vw;
+
+    .img_project_1 {
+        width: 15vw;
+        margin-top: 5vh;
+    }
+
+    #more {
+        font-family: 'Rajdhani', sans-serif;
+        text-align: center;
+        font-size: 1.5rem;
+        padding-top: 2vh;
+    }
+}
