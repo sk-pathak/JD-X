@@ -215,7 +215,7 @@ input[type=submit]:hover{
   
   footer{
     background: #000000;
-    position: fixed;
+    position:relative;
     bottom: 0;
   }
   *{
