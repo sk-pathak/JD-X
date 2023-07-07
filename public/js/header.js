@@ -11,3 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+burg=document.querySelector('.burg')
+right=document.querySelector('.right')
+main=document.querySelector('.main')
+burg.addEventListener('click',()=>{
+    right.classList.toggle('vis');
+    main.classList.toggle('h-nav');
+})
