@@ -1,0 +1,53 @@
+section{
+    background-image: url(/resources/Homepage/Background_with_dots.png);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+
+/* data */
+.data{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+.data_ele{
+    display: grid;
+    place-items: center;
+    align-items: center;
+    margin: 0.1rem;
+    width: 24%;
+    background-color: #28A9E2;
+    flex: 0 0 auto;
+}
+.data_num{
+    font-size: 54px;
+    color: white;
+    font-weight: 800;
+}
+.data_text{
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+}
+.data img{
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+}
+@media only screen and (max-width: 768px){
+    .data_ele{
+        width: 48%;
+    }
+}
+
+
+/* about us */
+.about_us{
+    display: grid;
+    width: 100%;
+    flex-wrap: wrap;
+}
