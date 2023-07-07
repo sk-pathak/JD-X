@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
 }
@@ -6,14 +6,15 @@ footer{
     background-color: black;
     color: white;
     display: flex;
-    flex-direction: column;
-    position: relative;
+    flex-direction: row;
+    position: fixed;
     bottom: 0px;
     width: 100%;
-    height: 275px;
+    height: auto;
 }
 .container{
     display: flex;
+    flex-direction: row;
 }
 .line1{
     border-left: 3px solid grey;
@@ -25,17 +26,8 @@ footer{
     position: relative;
     top: 119px;
 }
-.heading h2{
-    color: white;
-    word-wrap: break-word;
-    display: inline-block;
-    left: 18px;
-    bottom: 15px;
-    position: relative;
-}
 
 
-/* QUICK LINKS */
 .quick_links{
     flex-grow: 1;
     flex-basis: 100%;
@@ -60,7 +52,7 @@ footer{
     color: #fff;
     padding-left: 10px;
     text-decoration: tr;
-}
+} */
 /* .links a:after{
     content: '';
     position: relative;
@@ -76,11 +68,10 @@ footer{
 .links a:hover:after{
     transform: scaleX(1);
     transform-origin: bottom left;
-} */
+}*/
 
 
-/* NEWSLETTER */
-.newsletter{
+/* .newsletter{
     flex-grow: 1;
     flex-basis: 100%;
     margin: 15px 0px 0px 20px;
@@ -127,7 +118,6 @@ input[type=submit]:hover{
 }
 
 
-/* ABOUT */
 .about{
     flex-grow: 1;
     flex-basis: 100%;
@@ -135,29 +125,31 @@ input[type=submit]:hover{
     margin-top: 15px;
     word-wrap: break-word;
 }
-.text{
+.about h2{
+    color: white;
+    word-wrap: break-word;
+    display: inline-block;
+    left: 18px;
+    bottom: 15px;
+    position: relative;
+}
+.about p{
     margin: 10px 75px 0 0;
     font-size: 18px;
+}*/
+.socials{
+  display: inline-block;
+  position: relative;
+  left: 36%;
+  top: 18%;
+  transform: translate(-50%, -50%);
 }
-.socials ul{
-    position:relative;
-    top:70px;
-    left:185px;
-    transform: translate(-50%, -50%);
-    margin:0;
-    padding:0;
-    display:flex;
-}
-.socials ul li{
-    list-style: none;
-}
-.socials ul li a{
-    position: relative;
-    width:50px;
-    height:50px;
-    display:block;
+.socials a{
+    display: inline-block;
+    width:48px;
+    height:48px;
     text-align:center;
-    margin:0 10px;
+    margin: 0px 8px;
     border-radius: 50%;
     padding: 1px;
     box-sizing: border-box;
@@ -166,14 +158,13 @@ input[type=submit]:hover{
     background: linear-gradient(0deg, #ddd, #fff);
     transition: .5s;
 }
-.socials ul li a:hover{
+.socials a:hover{
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     text-decoration:none;
 }
-.socials ul li a .fab{
+.socials a .fab{
     width: 100%;
     height:100%;
-    display:block;
     background: linear-gradient(0deg, #fff, #ddd);
     border-radius: 50%;
     line-height: calc(60px - 12px);
@@ -181,15 +172,126 @@ input[type=submit]:hover{
     color: #262626;
     transition: .5s;
 }
-.socials ul li:nth-child(1) a:hover .fab{
+.socials :nth-child(1) :hover{
     color: #000000a9;
 }
-.socials ul li:nth-child(2) a:hover .fab{
+.socials :nth-child(2) :hover{
     color: 	#7289DA;
 }
-.socials ul li:nth-child(3) a:hover .fab{
+.socials :nth-child(3) :hover{
     color: #0072b1;
 }
-.socials ul li:nth-child(4) a:hover .fab{
+.socials :nth-child(4) :hover{
     color: #dd4b39;
 }
+
+/* ==========================================
+    FOR DEMO PURPOSE
+  ========================================== */
+
+  
+  .text-small {
+    font-size: 0.9rem;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  
+  a:hover, a:focus {
+    text-decoration: none;
+  }
+  
+  .form-control {
+    background: #1d1e22;
+    border-color: #545454;
+  }
+  
+  .form-control:focus{
+    background: #000000;
+  }
+  
+  footer{
+    background: #000000;
+    position: fixed;
+    bottom: 0;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /* ==========================================
+      CUSTOM UTILS CLASSES
+    ========================================== */
+    body, html {
+      height: 100%;
+    }
+    .links{
+      width: 33.33333333%;
+    }
+    h5{
+      text-align: center;
+    }
+    .links ul{
+      padding-left: 39%;
+    }
+  .links a{
+      text-decoration: none;
+      /* font-size: 18px; */
+      color: #fff;
+      line-height: 8px;
+      transition: all 0.3s ease;
+  }
+  .links a:hover{
+      color: #fff;
+      padding-left: 10px;
+      text-decoration: tr;
+  }
+  .mail{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(23, 66, 146);
+  }
+  .about p{
+    padding-right: 10%;
+    padding-left: 2%;
+    margin-top: 1rem;;
+  }
+  .about img{
+    height: 48px;
+    width: 48px;
+  }
+  .about h5{
+    text-align: left;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .socials{
+      left: 50%;
+    }
+    .about h5{
+      text-align: center;
+    }
+    .links{
+      margin-left: 30%;
+      padding-top: 5%;
+    }
+    .links ul{
+      padding-left: 4%;
+    }
+    .links li{
+      text-align: center;
+    }
+    .newsletter{
+      padding-top: 5%;
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    .links{
+      padding-top: 5%;
+    }
+  }

@@ -1,0 +1,31 @@
+
+    <header>
+        <div class="main">
+            <div class="left">
+                <img style="width: 56px; height: 56px" src="https://i.imgur.com/3b8B8kB.png" />
+                <h1>OPENLAKE</h1>
+            </div>
+            <div class="right">
+                <a href="/home" class="element">Home</a>
+                <a href="/projects" class="element">Projects</a>
+                <a href="/programs" class="element">Programs</a>
+                <a href="/community" class="element">Community</a>
+                <a href="/blogs" class="element">Blogs</a>
+                <a href="/alumni_talks" class="element">Alumni talks</a>
+            </div>
+        </div>
+    </header>
+
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var currentPath = window.location.pathname; 
+        var links = document.getElementsByClassName("element");
+        for (var i = 0; i < links.length; i++) {
+            links[i].classList.remove("active");
+        }
+        var currentLink = document.querySelector('a[href="' + currentPath + '"]');
+        if (currentLink) {
+            currentLink.classList.add("active");
+        }
+    });
+</script>
