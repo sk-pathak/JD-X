@@ -20,7 +20,7 @@ section{
     place-items: center;
     align-items: center;
     margin: 0.1rem;
-    width: 24%;
+    width: 24.5%;
     background-color: #28A9E2;
     flex: 0 0 auto;
 }
@@ -43,7 +43,7 @@ section{
         padding: 20px;
     }
     .data_ele{
-        width: 48%;
+        width: 49%;
         height: 45vw;
     }
     .data_text{
