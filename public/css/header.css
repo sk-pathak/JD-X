@@ -143,3 +143,8 @@ header {
   }
   
 }
+
+.element a{
+  color: white;
+  text-decoration: none;
+}
