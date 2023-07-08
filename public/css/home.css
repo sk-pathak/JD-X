@@ -111,3 +111,65 @@ section{
         font-size: 3vw;
     }
 }
+body {
+    background-image: url("/resources/Homepage/Background_with_dots.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contain{
+    top:125px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    position: relative;
+    color:white;
+    font-size:50px;
+    font-weight: bold;
+}
+
+  .contain img {
+    left: 424px;
+    position: relative;
+    animation: slideLeft 1s ease-in-out 1s forwards; 
+  }
+
+  @keyframes slideLeft {
+    0% {
+      left: 424px;
+    }
+    100% {
+      left: -50px; 
+    }
+  }
+
+.invi{
+    color:white;
+    font-size: 60px;
+    margin-top:120px;
+    text-align: center;
+    animation: fadeOut 1s ease-in-out 1s forwards;
+}
+@keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .slide-in {
+    opacity: 0;
+    animation: slideInFromRight 1s ease-in-out 1s forwards;
+  }
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
