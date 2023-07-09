@@ -12,16 +12,16 @@
 </head>
 
 <body>
-    {{>header}}
-    
-    <section>
-        <div class="contain"> <img style="height: 450px;width:450px;" src="https://i.imgur.com/3b8B8kB.png" />
-        <p class="slide-in">&lt;Connecting Students to the World<br> of <span style="color: blue; font-size:65px">Open Source</span> Development/&gt;</p>
+     {{>header}}
+    <div class="scroll scr-none">
+    <section id="bg" class="home_parts">
+        <div class="contain"> <img src="https://i.imgur.com/3b8B8kB.png" /> 
+        <p class="slide-in">&lt;Connecting Students to the World of <span class="highlight">Open Source</span> Development/&gt;</p>
         </div>
-        <p class="invi">OPENLAKE</p>
+       <p class="invi">OPENLAKE</p>
     </section>
 
-    <section>
+    <section class="home_parts">
         <div class="data">
             <div class="data_ele">
                 <img src="/resources/Homepage/Pr_logo.png">
@@ -46,7 +46,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="home_parts">
         <div class="about_us">
             <div class="about_heading">
                 <p>About us</p>
@@ -61,16 +61,36 @@
             </div>
         </div>
     </section>
-
-    <section>
+    
+    <section class="home_parts">
         <div class="carousel">
-            
+            <p id="car-title">Have a look of our projects</p>
+            <div class="med-scroller scr-none">
+                <div><a href="/project_1"  class="med-element"><img src="/resources/Homepage/projects_1.png" alt="project_Image"></a></div>
+                <div ><a href="/project_1" class="med-element"><img src="/resources/project/Activity_tracker_for_projects_2.png" alt="project_Image"></a></div>
+                <div ><a href="/project_1" class="med-element"><img src="/resources/project/project_carousel_1row_2.png" alt="project_Image"></a></div>
+                <div ><a href="/project_1" class="med-element"><img src="/resources/project/project_carousel_1row_3.png" alt="project_Image"></a></div>
+                <div ><a href="/project_1" class="med-element"><img src="/resources/project/Activity_tracker_for_projects_2.png" alt="project_Image"></a></div>
+            </div>
         </div>
     </section>
+    </div>
     {{>footer}}
 </body>
 
 {{!-- scripts --}}
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 <script src="/js/header.js"></script>
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+  var scroll = document.querySelector('.scroll');
+  
+scroll.addEventListener('click', function() {
+    scroll.scrollBy({
+      top: 830,
+    
+    });
+  });
+});
+</script>
 </html>
