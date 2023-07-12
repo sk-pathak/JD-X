@@ -186,3 +186,40 @@ body{
         font-size: 8.5vw;
     }
 }
+
+.contributers :nth-child(2){
+    transition-delay: 25ms;
+}
+.contributers :nth-child(3){
+    transition-delay: 50ms;
+}
+.contributers :nth-child(4){
+    transition-delay: 75ms;
+}
+.contributers :nth-child(5){
+    transition-delay: 100ms;
+}
+.contributers :nth-child(6){
+    transition-delay: 150ms;
+}
+.contributers :nth-child(7){
+    transition-delay: 200ms;
+}
+.contributers :nth-child(8){
+    transition-delay: 250ms;
+}
+.contributers :nth-child(9){
+    transition-delay: 300ms;
+}
+.contributers :nth-child(10){
+    transition-delay: 350ms;
+}
+.contributers :nth-child(11){
+    transition-delay: 400ms;
+}
+.contributers :nth-child(12){
+    transition-delay: 450ms;
+}
+.contributers :nth-child(13){
+    transition-delay: 500ms;
+}

@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var scroll = document.querySelector('.scroll');
+// document.addEventListener('DOMContentLoaded', function() {
+//     var scroll = document.querySelector('.scroll');
     
-  scroll.addEventListener('click', function() {
-      scroll.scrollBy({
-        top: 830,
+//   scroll.addEventListener('click', function() {
+//       scroll.scrollBy({
+//         top: 830,
       
-      });
-    });
-  });
+//       });
+//     });
+//   });
