@@ -118,7 +118,7 @@ html{
 }
 body {
     background-image: url("/resources/Homepage/Background_with_dots.png");
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: cover;
 }
 
