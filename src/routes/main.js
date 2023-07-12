@@ -26,5 +26,8 @@ routes.get("/blogs", (req, res) => {
 routes.get("/alumni talks", (req, res) => {
     res.render("alumni talks");
 });
+routes.get("/alumni_talks_2", (req, res) => {
+    res.render("alumni_talks_2");
+});
 
 module.exports = routes;
