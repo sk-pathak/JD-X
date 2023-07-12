@@ -92,3 +92,56 @@ body{
     font-weight: 600;
     display: inline-block;
 }
+
+.head-cont{
+    text-align: center;
+    font-weight: 800;
+    font-size: 5.5vw;
+    margin-bottom: 0.75rem;
+}
+
+
+.contributers{
+    position:relative;
+    width:100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.contributers img{
+    position:absolute;
+}
+.com_parts{
+    background-image: url(/resources/Homepage/Background_with_dots.png);
+    width: 100%;
+    height:100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    margin-bottom: 25vw;
+}
+
+@media only screen and (max-width:900px) {
+    .com_parts{
+        margin-bottom: 0;
+    }
+    .head-cont{
+        font-size: 8.5vw;
+    }
+}
+@media only screen and (max-width:600px) {
+    .com_parts{
+        margin-bottom: -35vw;
+    }
+    .head-cont{
+        font-size: 8.5vw;
+    }
+}
+@media only screen and (max-width:420px) {
+    .com_parts{
+        margin-bottom: -70vw;
+    }
+    .head-cont{
+        font-size: 8.5vw;
+    }
+}
