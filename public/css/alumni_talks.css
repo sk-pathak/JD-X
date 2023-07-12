@@ -1,0 +1,57 @@
+.at-main-img{
+    width:80%;
+    height: auto;
+    display:flex;
+    margin-top: 1%;   
+    margin-left: 10%;
+}
+
+.at-title{
+    font-weight:700;
+    font-size: 400%;
+    text-align: center;
+}
+
+.at_parts{
+    background-image: url(/resources/Homepage/Background_with_dots.png);
+    width: 100%;
+    display: grid;
+   
+}
+
+.at-para{
+   margin:  2% 10%;
+}
+.at-by{
+    font-size: 200%;
+    margin-left:10%;
+}
+
+@media only screen and (max-width: 932px){
+    .at-title{
+        font-size: 200%;
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (max-width: 620px){
+    .at-title{
+        font-size: 150%;
+        margin-top: 18%;
+    }
+    .at-by{
+        font-size: 150%;
+    }
+}
+@media only screen and (max-width: 365px){
+    .at-title{
+        font-size: 100%;
+        margin-top: 20%;
+    }
+    .at-para{
+       font-size: 10px;
+     }
+     .at-by{
+        font-size: 110%;
+    }
+}
