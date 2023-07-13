@@ -73,31 +73,65 @@ body{
 
 /* coordinator & mentors */
 .community{
+    height: 100%;
+}
+.flex_community{
     display: flex;
     flex-direction: row;
-
+    width: 100%;
+    height: 100%;
+}
+.coordinator{
+    width: 39%;
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+.border_com{
+    background-color: blue;
+    height: 80%;
+    width: 6px;
+}
+.mentors{
+    width: 60%;
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+.mentor_img{
+    display: flex;
+    margin: 4vh;
+}
+.mentor_img p{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    text-align: center;
 }
 .heading_community{
     width: 100%;
 }
 .heading_community h2{
-    width: 30%;
-    font-size: 3.3rem;
+    width: 40%;
+    font-size: 4rem;
     font-weight: 700;
     display: inline-block;
+    padding-left: 5vw;
 }
 .heading_community h5{
-    width: 70%;
+    width: 60%;
     font-size: 1.6rem;
     font-weight: 600;
     display: inline-block;
+    text-align: center;
 }
 
 .head-cont{
     text-align: center;
     font-weight: 800;
-    font-size: 5.5vw;
-    margin-bottom: 0.75rem;
+    font-size: 5vw;
+    margin-bottom: 1rem;
 }
 
 
@@ -110,15 +144,22 @@ body{
 }
 
 .contributers img{
+    overflow: hidden;
     position:absolute;
+    transition: transform 0.3s;
+}
+.contributers img:hover{
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
 }
 .com_parts{
     background-image: url(/resources/Homepage/Background_with_dots.png);
     width: 100%;
     height:100vh;
+    padding-top: 12vh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    margin-bottom: 25vw;
 }
 
 @media only screen and (max-width:900px) {
@@ -144,4 +185,41 @@ body{
     .head-cont{
         font-size: 8.5vw;
     }
+}
+
+.contributers :nth-child(2){
+    transition-delay: 25ms;
+}
+.contributers :nth-child(3){
+    transition-delay: 50ms;
+}
+.contributers :nth-child(4){
+    transition-delay: 75ms;
+}
+.contributers :nth-child(5){
+    transition-delay: 100ms;
+}
+.contributers :nth-child(6){
+    transition-delay: 150ms;
+}
+.contributers :nth-child(7){
+    transition-delay: 200ms;
+}
+.contributers :nth-child(8){
+    transition-delay: 250ms;
+}
+.contributers :nth-child(9){
+    transition-delay: 300ms;
+}
+.contributers :nth-child(10){
+    transition-delay: 350ms;
+}
+.contributers :nth-child(11){
+    transition-delay: 400ms;
+}
+.contributers :nth-child(12){
+    transition-delay: 450ms;
+}
+.contributers :nth-child(13){
+    transition-delay: 500ms;
 }

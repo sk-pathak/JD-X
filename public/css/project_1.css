@@ -7,7 +7,7 @@
 
 .project_1 {
     display: flex;
-
+    margin-top: 11.570247933884298vh;
     font-family: 'Rajdhani', sans-serif;
 }
 
@@ -26,76 +26,72 @@
     width: 80vw;
     padding-left: 5.78125vw;
     padding-right: 2vw;
+}
+/* heading */
+.heading_project_1 h1 {
+    color: #1589FF;
+    font-size: 3.125rem;
+}
 
+.heading_project_1 h1 a {
+    font-size: 1rem;
+    color: #A9A9A9;
+}
 
-    /* heading */
-    .heading_project_1 h1 {
-        color: #1589FF;
-        font-size: 3.125rem;
-    }
+.heading_project_1 h3 {
+    color: #9A9A9A;
+    font-size: 1.5rem;
+}
 
-    .heading_project_1 h1 a {
-        font-size: 1rem;
-        color: #A9A9A9;
-    }
+.about_project_1 {
+    font-size: 1.2rem;
+    margin-top: 5vh;
+}
 
-    .heading_project_1 h3 {
-        color: #9A9A9A;
-        font-size: 1.5rem;
-    }
-
-    .about_project_1 {
-        font-size: 1.2rem;
-        margin-top: 5vh;
-    }
-
-    .subheading_project_1 {
-        font-size: 1.65rem;
-        margin-top: 2vw;
-        color: #FFFFFF;
-    }
-
+.subheading_project_1 {
+    font-size: 1.65rem;
+    margin-top: 2vw;
+    color: #FFFFFF;
 }
 
 .ss_project_1 {
-
     padding-left: 5.78125vw;
     padding-right: 2vw;
     margin-bottom: 30px;
+}
+.subheading_project_1 {
+    font-size: 1.65rem;
+    margin-top: 2vw;
 
-    .subheading_project_1 {
-        font-size: 1.65rem;
-        margin-top: 2vw;
+    color: #FFFFFF;
+}
 
-        color: #FFFFFF;
-    }
+#screenshot_project_1{
+    display: flex;
+}
 
-    img {
-        display: flex;
-    }
-
-    #screenshot_project_1 {
-        width: 43.125vw;
-        height: 49.586776859504134vhvh;
-
-        margin-top: 5vh;
-
-
-    }
+#screenshot_project_1 {
+    width: 43.125vw;
+    height: 49.586776859504134vhvh;
+    margin-top: 5vh;
 }
 
 .image_project_1 {
     padding-left: 2.5vw;
+    
+}
+.img_project_1 {
+    width: 15vw;
+    margin-top: 5vh;
+    display: flex;
+}
 
-    .img_project_1 {
-        width: 15vw;
-        margin-top: 5vh;
-    }
-
-    #more {
-        font-family: 'Rajdhani', sans-serif;
-        text-align: center;
-        font-size: 1.5rem;
-        padding-top: 2vh;
-    }
+#more {
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 2vh;
+}
+.temp{
+    scroll-snap-align: start;
 }

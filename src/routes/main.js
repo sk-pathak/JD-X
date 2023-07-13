@@ -23,8 +23,8 @@ routes.get("/community", (req, res) => {
 routes.get("/blogs", (req, res) => {
     res.render("blogs");
 });
-routes.get("/alumni talks", (req, res) => {
-    res.render("alumni talks");
+routes.get("/alumni_talks", (req, res) => {
+    res.render("alumni_talks");
 });
 routes.get("/alumni_talks_2", (req, res) => {
     res.render("alumni_talks_2");
