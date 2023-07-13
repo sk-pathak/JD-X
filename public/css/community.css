@@ -126,7 +126,7 @@ body{
     display: inline-block;
     text-align: center;
 }
-
+/* CONTRIBUTERS */
 .head-cont{
     text-align: center;
     font-weight: 800;
@@ -160,7 +160,9 @@ body{
     padding-top: 12vh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
+    margin-bottom: 0;
 }
+
 
 @media only screen and (max-width:900px) {
     .com_parts{
@@ -184,6 +186,11 @@ body{
     }
     .head-cont{
         font-size: 8.5vw;
+    }
+}
+@media only screen and (max-width:350px) {
+    .com_parts{
+        margin-bottom: -90vw;
     }
 }
 
