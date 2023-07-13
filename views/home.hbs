@@ -14,7 +14,7 @@
 <body>
     {{>header}}
 
-    <section id="bg" class="hidden home_parts">
+    <section id="bg" class="home_parts">
         <div class="contain"> <img src="/resources/logo.png" /> 
         <p class="slide-in">&lt;Connecting Students to the World of <span class="highlight">Open Source</span> Development/&gt;</p>
         </div>
@@ -25,23 +25,23 @@
         <div class="data">
             <div class="data_ele">
                 <img src="/resources/Homepage/Pr_logo.png">
-                <p class="data_text">Projects</p>
-                <p class="data_num">1+</p>
+                <p class="data_text">Repos</p>
+                <p class="data_num" id="repos"></p>
             </div>
             <div class="data_ele">
                 <img src="/resources/Homepage/Pr_logo.png">
-                <p class="data_text">Pull Requests</p>
-                <p class="data_num">10+</p>
+                <p class="data_text">Forks</p>
+                <p class="data_num" id="forks"></p>
             </div>
             <div class="data_ele">
                 <img src="/resources/Homepage/Pr_logo.png">
-                <p class="data_text">Contributors</p>
-                <p class="data_num">10+</p>
+                <p class="data_text">Members</p>
+                <p class="data_num" id="mems"></p>
             </div>
             <div class="data_ele">
                 <img src="/resources/Homepage/Pr_logo.png">
-                <p class="data_text">Events</p>
-                <p class="data_num">10+</p>
+                <p class="data_text">Stars</p>
+                <p class="data_num" id="stars"></p>
             </div>
         </div>
     </section>
@@ -64,7 +64,7 @@
     
     <section class="hidden home_parts">
         <div class="carousel">
-            <p id="car-title">Have a look of our projects</p>
+            <p id="car-title">Have a look at our projects</p>
             <div class="med-scroller scr-none">
                 <div><a href="/project_1"  class="med-element"><img src="/resources/Homepage/projects_1.png" alt="project_Image"></a></div>
                 <div ><a href="/project_1" class="med-element"><img src="/resources/project/Activity_tracker_for_projects_2.png" alt="project_Image"></a></div>
@@ -79,7 +79,8 @@
 </body>
 
 {{!-- scripts --}}
+<script async src="/js/scroll.js"></script>
+<script async src="/js/home.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-<script src="/js/header.js"></script>
-<script src="/js/scroll.js"></script>
+<script async src="/js/header.js"></script>
 </html>

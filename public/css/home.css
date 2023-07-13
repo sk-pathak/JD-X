@@ -44,18 +44,21 @@ html{
     margin-top: 1.5rem;
 }
 @media only screen and (max-width: 768px){
-    .data{
+  .data{
+        margin-left: 30%;
         padding: 20px;
     }
     .data_ele{
-        width: 49%;
-        height: 45vw;
+        width: 35%;
+        height: 25vw;
     }
     .data_text{
         font-size: 4vw;
+        margin-bottom: 0rem;
     }
     .data_num{
         font-size: 6vw;
+        margin-bottom: 0rem;
     }
     .data img{
         margin-top: 0.5rem;
@@ -106,6 +109,9 @@ html{
         align-self: center;
         width: 100%;
         font-size: 5.5vw;
+      }
+    .about_heading p{
+        border-bottom: 4px solid blue;
     }
 }
 @media only screen and (max-width: 576px){

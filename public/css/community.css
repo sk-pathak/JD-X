@@ -135,7 +135,7 @@ body{
 }
 
 
-.contributers{
+.contributors{
     position:relative;
     width:100%;
     height: 100vh;
@@ -143,12 +143,12 @@ body{
     left: 0;
 }
 
-.contributers img{
+.contributors img{
     overflow: hidden;
     position:absolute;
     transition: transform 0.3s;
 }
-.contributers img:hover{
+.contributors img:hover{
     transform: scale(1.1);
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
@@ -194,39 +194,39 @@ body{
     }
 }
 
-.contributers :nth-child(2){
+.contributors :nth-child(2){
     transition-delay: 25ms;
 }
-.contributers :nth-child(3){
+.contributors :nth-child(3){
     transition-delay: 50ms;
 }
-.contributers :nth-child(4){
+.contributors :nth-child(4){
     transition-delay: 75ms;
 }
-.contributers :nth-child(5){
+.contributors :nth-child(5){
     transition-delay: 100ms;
 }
-.contributers :nth-child(6){
+.contributors :nth-child(6){
     transition-delay: 150ms;
 }
-.contributers :nth-child(7){
+.contributors :nth-child(7){
     transition-delay: 200ms;
 }
-.contributers :nth-child(8){
+.contributors :nth-child(8){
     transition-delay: 250ms;
 }
-.contributers :nth-child(9){
+.contributors :nth-child(9){
     transition-delay: 300ms;
 }
-.contributers :nth-child(10){
+.contributors :nth-child(10){
     transition-delay: 350ms;
 }
-.contributers :nth-child(11){
+.contributors :nth-child(11){
     transition-delay: 400ms;
 }
-.contributers :nth-child(12){
+.contributors :nth-child(12){
     transition-delay: 450ms;
 }
-.contributers :nth-child(13){
+.contributors :nth-child(13){
     transition-delay: 500ms;
 }
