@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 320px) {
+    .list {
+        font-size: 0.65rem !important;
+        line-height: 1rem !important;
+    }
+
+    .font {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .list {
+        font-size: 0.75rem;
+    }
+}
+
+li {
+    @media (min-width: 550px) {
+        width: 15vw;
+    }
+
+    @media (max-width: 550px) {
+        width: 20vw;
+    }
+
+    border-right: 1px solid whitesmoke;
+}
+
+.mt-100 {
+    margin-top: 100%;
+}
+
+.content_programs {
+    color: white;
+    /* display: flex; */
+    /* flex-direction: column; */
+    align-items: center;
+    padding: 0 1vw;
+}
+
+.content_programs .heading_programs {
+    /* display: flex; */
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.content_programs .heading_programs a {
+    font-size: 0.75rem;
+    color: #959595;
+}
+
+.content_programs .typography_programs {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.content_programs .sub-heading_programs {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 1vw;
+}
+
+.content_programs .photos_programs {
+    display: flex;
+}
+
+.content_programs .photos_programs img {
+    margin: auto;
+    height: 24vh;
+    width: 21vw;
+}
+
+#showcontent {
+    background-color: #181818;
+}
+
+@media only screen and (max-width: 992px) {
+    .content_programs .photos_programs img {
+        height: 18vh;
+    }
+
+    .content_programs .typography_programs {
+        font-size: 1.25rem;
+        font-weight: 100;
+    }
+
+    .content_programs .heading_programs {
+        /* display: flex; */
+        text-align: center;
+        font-size: 1.75rem;
+        font-weight: bolder;
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    .content_programs .photos_programs {
+        display: inline;
+    }
+
+    .content_programs .photos_programs img {
+        width: auto;
+        margin-bottom: 3vw;
+    }
+
+    .content_programs .typography_programs {
+        font-size: 1rem;
+        font-weight: 100;
+    }
+    .content_programs .heading_programs {
+        /* display: flex; */
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+}
