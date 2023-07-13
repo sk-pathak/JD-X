@@ -1,8 +1,4 @@
 /* team */
-html{
-    scroll-snap-type: y mandatory;
-    scroll-snap-stop: always;
-}
 body{
     padding-top: 4rem;
 }
