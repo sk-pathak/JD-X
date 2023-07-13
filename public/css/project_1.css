@@ -41,6 +41,7 @@
 .heading_project_1 h3 {
     color: #9A9A9A;
     font-size: 1.5rem;
+    display: inline-block;
 }
 
 .about_project_1 {
