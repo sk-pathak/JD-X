@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="\js\programs.js"></script>
+    <title>Programs</title>
+</head>
+
+<body>
+    {{>header}}
+    <div class="heading flex justify-center mt-10 mb-10">
+        <h1 class="text-white text-2xl sm:text-4xl md:text-6xl font-bold font-mono">Programs</h1>
+    </div>
+    <div class="text-white flex justify-evenly">
+        <div class="flex sm:font-medium ">
+            <p class="font m-auto text-zinc-400 text sm:text-lg">Past Programs</p>
+            <svg xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" class="w-6 h-8 pt-1 ml-4 stroke-zinc-400">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+            </svg>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+            </svg>
+        </div>
+        <div class="flex sm:font-medium "><svg xmlns="http://www.w3.org/2000/svg" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 pt-1 mr-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+            </svg>
+            <p class="font m-auto text sm:text-lg ">Upcoming Programs</p>
+        </div>
+    </div>
+    <div class="flex justify-around pt-4 content mb-4">
+        <div class=""><button id="prev-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    class="w-6 h-6 mt-100">
+                    <path fill-rule="evenodd"
+                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-4.28 9.22a.75.75 0 000 1.06l3 3a.75.75 0 101.06-1.06l-1.72-1.72h5.69a.75.75 0 000-1.5h-5.69l1.72-1.72a.75.75 0 00-1.06-1.06l-3 3z"
+                        clip-rule="evenodd" />
+                </svg></button>
+        </div>
+        <div class="list-container">
+            <ul class="list flex text-right sm:text-lg sm:font-semibold">
+                <li id="8-23-col" class="inline-block pr-1 sm:pr-4"><button onclick="showHide('8-23')">
+                        <p class="text-inherit">July</p>
+                        <p class="text-inherit">08 2023</p>Thursday
+                    </button></li>
+                <li id="9-23-col" class="inline-block pr-1 sm:pr-4"><button onclick="showHide('9-23')">
+                        <p class="text-inherit">July</p>
+                        <p class="text-inherit">09 2023</p>Friday
+                    </button></li>
+                <li id="10-23-col" class="inline-block pr-1 sm:pr-4"><button onclick="showHide('10-23')">
+                        <p class="text-inherit">July</p>
+                        <p class="text-inherit">10 2023</p>Saturday
+                    </button></li>
+                <li id="11-23-col" class="inline-block pr-1 sm:pr-4"><button onclick="showHide('11-23')">
+                        <p class="text-inherit">July</p>
+                        <p class="text-inherit">11 2023</p>Sunday
+                    </button></li>
+                <li id="12-23-col" class="inline-block pr-1 sm:pr-4"><button onclick="showHide('12-23')">
+                        <p class="text-inherit">July</p>
+                        <p class="text-inherit">12 2023</p>Monday
+                    </button></li>
+                <li id="13-23-col" class="inline-block pr-1 sm:pr-4"><button onclick="showHide('13-23')">
+                        <p class="text-inherit">July</p>
+                        <p class="text-inherit">13 2023</p>Tuesday
+                    </button></li>
+                <li id="14-23-col" class="inline-block pr-1 sm:pr-4"><button onclick="showHide('14-23')">
+                        <p class="text-inherit">July</p>
+                        <p class="text-inherit">14 2023</p>Wednesday
+                    </button></li>
+                <li id="15-23-col" class="inline-block pr-1 sm:pr-4"><button onclick="showHide('15-23')">
+                        <p class="text-inherit">July</p>
+                        <p class="text-inherit">15 2023</p>Thursday
+                    </button></li>
+                <li id="16-23-col" class="inline-block pr-1 sm:pr-4"><button onclick="showHide('16-23')">
+                        <p class="text-inherit">July</p>
+                        <p class="text-inherit">16 2023</p>Friday
+                    </button></li>
+                <li id="17-23-col" class="inline-block pr-1 sm:pr-4"><button onclick="showHide('17-23')">
+                        <p class="text-inherit">July</p>
+                        <p class="text-inherit">17 2023</p>Saturday
+                    </button></li>
+                <li id="18-23-col" class="inline-block pr-1 sm:pr-4"><button onclick="showHide('18-23')">
+                        <p class="text-inherit">July</p>
+                        <p class="text-inherit">18 2023</p>Sunday
+                    </button></li>
+
+            </ul>
+        </div>
+        <div class=""><button id="next-btn"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    class="w-6 h-6 mt-100">
+                    <path fill-rule="evenodd"
+                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                        clip-rule="evenodd" />
+                </svg></button>
+        </div>
+    </div>
+    <div id="showContents" class="content_programs hidden m-auto w-3/4 h-fit  border-2 rounded-xl">
+        <div class="heading_programs">Web Wave V_2.0
+
+            <a href="#">link</a>
+
+        </div>
+
+        <div class="typography_programs">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi mollitia dolorem delectus, a laborum
+            accusamus dolor distinctio perferendis vel? Libero facere maxime accusamus beatae officia odit dolores
+            necessitatibus, modi illo! Dignissimos iure deleniti laboriosam praesentium aliquam exercitationem labore
+            possimus molestias distinctio consequatur! Nesciunt, labore possimus doloremque inventore nulla consequuntur
+            distinctio a qui, aut quas sapiente ratione voluptatem officiis ab dicta eos maiores suscipit tenetur
+            explicabo odit libero cupiditate ullam fugiat itaque. Aspernatur vitae dolorem eius ab, laborum itaque
+            repudiandae facilis ex doloremque animi ea eum perspiciatis laboriosam est consequuntur natus deserunt.
+        </div>
+        <div class="sub-heading_programs">Photos</div>
+        <div class="photos_programs">
+            <img src="resources\programs\Rectangle 20.png" alt="">
+            <img src="resources\programs\Rectangle 21.png" alt="">
+            <img src="resources\programs\Rectangle 22.png" alt="">
+
+        </div>
+        <div class="sub-heading_programs">Statistics</div>
+        <div class="statistics_programs">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod distinctio neque dolorem nihil, minus culpa
+            fuga dolorum ipsum aliquid eligendi quibusdam deserunt laboriosam non repudiandae commodi, enim error eius
+            cumque! Voluptatum at doloremque quisquam rem dolorem aspernatur iure voluptatibus error deserunt delectus.
+
+        </div>
+    </div>
+
+    {{!-- {{>footer}} --}}
+
+</body>
+
+</html>
