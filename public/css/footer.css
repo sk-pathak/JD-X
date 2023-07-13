@@ -2,7 +2,7 @@ footer{
   background: #121212;
   position: relative;
   bottom: 0;
-  scroll-snap-align: start;
+  scroll-snap-align: end;
   height: 100%;
   scroll-snap-stop: always;
 }

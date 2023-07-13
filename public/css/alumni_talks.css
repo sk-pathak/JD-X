@@ -1,9 +1,10 @@
 .at-main-img{
-    width:80%;
+    width:70%;
     height: auto;
-    display:flex;
-    margin-top: 1%;   
-    margin-left: 10%;
+}
+.at_heading{
+    display: grid;
+    place-items: center;
 }
 
 .at-title{
@@ -16,7 +17,6 @@
     background-image: url(/resources/Homepage/Background_with_dots.png);
     width: 100%;
     display: grid;
-   
 }
 
 .at-para{
@@ -119,6 +119,10 @@
     transform: scale(1.1);
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
+}
+.card_content:hover .alum_col_line{
+    width: 100%;
+    background-image: linear-gradient(to right, blue, red);
 }
 .alum_col_line{
     width: 35%;
