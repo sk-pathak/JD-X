@@ -130,13 +130,13 @@ If you have a suggestion that would make this better, please fork the repo and c
 ## Contact
 Sumit Pathak - [![linkedin-shield]](https://www.linkedin.com/in/sumit-pathak-bb0a5314b) - [![gmail]](mailto:sumitpathak2002@gmail.com)
 <br>
-Sumit Pathak - [![linkedin-shield]](https://www.linkedin.com/in/sumit-pathak-bb0a5314b) - [![gmail]](mailto:sumitpathak2002@gmail.com)
+Hemanth Kumar Reddy - [![linkedin-shield]](https://www.linkedin.com/in/hemanth-kumar-reddy-89668b252/) - [![gmail]](mailto:punetihemanth@iitbhilai.ac.in)
 <br>
-Sumit Pathak - [![linkedin-shield]](https://www.linkedin.com/in/sumit-pathak-bb0a5314b) - [![gmail]](mailto:sumitpathak2002@gmail.com)
+Suraj Uttam Gaikwad - [![linkedin-shield]](https://www.linkedin.com/in/suraj-uttam-gaikwad-50a96425b) - [![gmail]](mailto:surajutt@iitbhilai.ac.in)
 <br>
-Sumit Pathak - [![linkedin-shield]](https://www.linkedin.com/in/sumit-pathak-bb0a5314b) - [![gmail]](mailto:sumitpathak2002@gmail.com)
+Nischay Rajput - [![linkedin-shield]](https://www.linkedin.com/in/nishchay-rajput-83969a264) - [![gmail]](mailto:nishchayr@iitbhilai.ac.in)
 <br>
-Sumit Pathak - [![linkedin-shield]](https://www.linkedin.com/in/sumit-pathak-bb0a5314b) - [![gmail]](mailto:sumitpathak2002@gmail.com)
+Nishant Verma - [![gmail]](mailto:nishantv@iitbhilai.ac.in)
 
 
 ## Acknowledgments
