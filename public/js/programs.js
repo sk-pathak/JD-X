@@ -110,5 +110,10 @@ function showHide(events) {
         if(!element.classList.contains('hidden')){
             element.scrollIntoView({behaviour:'smooth'});
         }
+        // After the scroll is complete, adjust the scroll position to the desired distance
+        setTimeout(() => {
+            const scrollPosition = element.getBoundingClientRect().top - 80;
+            window.scrollBy({ top: scrollPosition, behavior: "smooth" });
+        }, 50); // Adjust the timeout value as needed to wait for the scroll to complete
     }
 }
