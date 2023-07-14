@@ -186,6 +186,7 @@ body{
 .contributors img{
     overflow: hidden;
     position:absolute;
+    margin-top: 6vh;
 }
 .contributors img:hover{
     transform: scale(1.1);
@@ -268,4 +269,29 @@ body{
 }
 .contributors :nth-child(13) img{
     transition-delay: 500ms;
+}
+
+@media only screen and (max-width: 992px){
+    .contributors{
+        margin-top: 12vh;
+    }
+}
+@media only screen and (max-width: 700px){
+    .contributors{
+        margin-top: 15vh;
+    }
+}
+@media only screen and (max-width: 500px){
+    .contributors{
+        margin-top: 18vh;
+    }
+}
+@media only screen and (max-width: 425px){
+    .contributors{
+        margin-top: 18vh;
+    }
+    #mentors_first{
+        padding-bottom: 28vh;
+        margin-bottom: 5vh;
+    }
 }
