@@ -5,19 +5,20 @@
     color: white;
 }
 
+
 .project_1 {
+    background-image: url(/resources/Homepage/Background_with_dots.png);
     display: flex;
-    margin-top: 11.570247933884298vh;
     font-family: 'Rajdhani', sans-serif;
 }
 
 
 /* For image */
 .image_project_1 {
-
+    
     width: 20vw;
     height: fit-content;
-
+    
 }
 
 /* For content */
@@ -36,6 +37,7 @@
 
 .heading_project_1 h1 a {
     font-size: 1rem;
+    text-decoration: underline;
     color: #A9A9A9;
 }
 
@@ -47,6 +49,8 @@
 
 .about_project_1 {
     font-size: 1.2rem;
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-weight: 100;
     margin-top: 5vh;
 }
 
@@ -57,12 +61,13 @@
 } */
 
 .ss_project_1 {
+    background-image: url(/resources/Homepage/Background_with_dots.png);
     padding-left: 5.78125vw;
     padding-right: 2vw;
     margin-bottom: 30px;
 }
 
-.subheading_project_1 h3{
+.subheading_project_1 h3 {
     font-size: 1.65rem;
     margin-top: 2vw;
     font-weight: bold;
@@ -86,7 +91,7 @@
 
 .image_project_1 {
     padding-left: 2.5vw;
-
+    
 }
 
 .img_project_1 {
@@ -95,11 +100,22 @@
     display: flex;
 }
 
+.techstack {
+    display: flex;
+    
+}
+
+.techstack img {
+    height: 10vh;
+    width: 5vw;
+}
+
 #more {
     font-family: 'Rajdhani', sans-serif;
     text-align: center;
     font-size: 1.5rem;
     padding-top: 2vh;
+    padding-right: 3vw;
 }
 
 .temp {
@@ -107,6 +123,11 @@
 }
 
 @media only screen and (max-width : 992px) {
+
+    .techstack img{
+        height: 4vh;
+
+    }
     .heading_project_1 h1 {
         color: #1589FF;
         font-size: 2.5rem;
@@ -136,6 +157,9 @@
         font-size: 1rem;
         display: flex;
     }
+    .img_project_1{
+        height: auto;
+    }
 
     .heading_project_1 h1 a {
         font-size: 1rem;
@@ -144,16 +168,22 @@
 }
 
 @media only screen and (max-width:576px) {
-    .image_project_1{
+    .techstack img{
+        height: 3vh;
+    }
+    .image_project_1 {
         display: none;
     }
-    .content_project_1{
+
+    .content_project_1 {
         width: auto;
     }
-    .images_project_1{
+
+    .images_project_1 {
         display: block;
     }
-    #screenshot_project_1{
+
+    #screenshot_project_1 {
         width: 90vw;
     }
 }
