@@ -107,5 +107,8 @@ function showHide(events) {
         }
         preElement = element;
         preLst = lst;
+        if(!element.classList.contains('hidden')){
+            element.scrollIntoView({behaviour:'smooth'});
+        }
     }
 }
