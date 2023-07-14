@@ -224,3 +224,16 @@
     /* height: 4vh; */
     border: 1px solid #929292
 }
+
+@media only screen and (max-width: 620px){
+    .categories_blogs{
+        margin-top: 0vh;
+        margin-bottom: 25vh;
+        height: 55%;
+    }
+}
+@media only screen and (max-width: 450px){
+    .categories_blogs{
+        height: 40%;
+    }
+}

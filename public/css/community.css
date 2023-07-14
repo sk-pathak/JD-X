@@ -5,7 +5,6 @@ body{
 .team{
     display: flex;
     flex-direction: row;
-/*     flex-wrap: wrap; */
     width: 100%;
 }
 .head_team{
@@ -16,14 +15,14 @@ body{
 }
 .head_team h3{
     text-align: center;
-    font-weight: 800;
+    font-weight: 900;
     font-size: 4.5vw;
     margin-bottom: 0.75rem;
 }
 .head_team p{
     text-align: center;
     font-family: var(--font);
-    font-weight: 100;
+    font-weight: 500;
     font-size: 1.5vw;
 }
 .team_image{
@@ -85,6 +84,7 @@ body{
     display: grid;
     place-items: center;
     align-content: center;
+    place-content: center;
 }
 .mentor_img{
     display: flex;
@@ -127,6 +127,9 @@ body{
     display: grid;
     padding-bottom: 3vh;
 }
+#show_coordinator{
+    display: none;
+}
 @media only screen and (max-width: 992px){
     .flex_community{
         flex-direction: column;
@@ -146,6 +149,9 @@ body{
     #hide_coordinator{
         display: none;
     }
+    #show_coordinator{
+        display: grid;
+    }
     .border_com{
         display: none;
     }
@@ -154,6 +160,14 @@ body{
     .mentors{
         height: 90vh;
         padding-bottom: 5vh;
+    }
+    .coordinator{
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 400px){
+    #show_coordinator p{
+        font-size: 3vw;
     }
 }
 /* CONTRIBUTERS */
@@ -186,7 +200,7 @@ body{
 .com_parts{
     background-image: url(/resources/Homepage/Background_with_dots.png);
     width: 100%;
-    height:100vh;
+    height:100%;
     padding-top: 12vh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
@@ -281,6 +295,7 @@ body{
     }
 }
 @media only screen and (max-width: 425px){
+    
     .contributors{
         margin-top: 18vh;
     }

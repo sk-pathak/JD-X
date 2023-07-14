@@ -269,3 +269,8 @@
         margin-top: 0vh;
     }
 }
+@media only screen and (max-width: 420px){
+    .card{
+        margin-left: 1vw;
+    }
+}
