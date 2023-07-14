@@ -5,7 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
         links[i].classList.remove("active");
     }
     var currentLink = document.querySelector('a[href="' + currentPath + '"]');
-    if (currentLink) {
+    if (currentLink){
+        if(currentPath=="/"){
+            currentLink=document.querySelector('a[href="/home"]');
+        }
         currentLink.classList.add("active");
     }
 });
