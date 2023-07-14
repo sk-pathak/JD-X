@@ -20,7 +20,7 @@ body {
     }
 }
 
-li {
+.list li {
     @media (min-width: 550px) {
         width: 15vw;
     }
