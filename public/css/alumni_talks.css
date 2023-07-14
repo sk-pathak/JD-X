@@ -1,10 +1,11 @@
 .at-main-img{
-    width:70%;
+    width: 65%;
     height: auto;
 }
 .at_heading{
     display: grid;
     place-items: center;
+    margin-top: 4vh;
 }
 
 .at-title{
@@ -17,6 +18,8 @@
     background-image: url(/resources/Homepage/Background_with_dots.png);
     width: 100%;
     display: grid;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 .at-para{
@@ -68,34 +71,35 @@
     scroll-snap-stop: always;
 }
 .alumni_heading{
-    font-size: 4rem;
+    text-align: center;
+    font-size: 5vw;
     font-weight: 800;
 }
-.mySlides {display: none;}
-.mySildes img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
+.mySlides{
+    display: none;
+}
+.mySildes img{
+    vertical-align: middle;
+}
+.slideshow-container{
+  height: 100vh;
   position: relative;
   margin: auto;
 }
-
-/* Fading animation */
+.slideshow-container img{
+    height: 70vh;
+    width: 80vw;
+}
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
 }
-
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
+
 
 .card{
     display: flex;
@@ -107,9 +111,17 @@
     margin-bottom: 1vh;
     background-color: black;
 }
+.card :nth-child(1) div{
+    transition-delay: 150ms;
+}
+.card :nth-child(2) div{
+    transition-delay: 100ms;
+}
+.card :nth-child(3) div{
+    transition-delay: 50ms;
+}
 .card_content{
     display: grid;
-    transition: transform 0.5s;
     overflow: hidden;
     border: 0.5px solid gray;
     border-radius: 6%;
@@ -130,7 +142,7 @@
     background-color: blue;
 }
 .heading_alum{
-    font-size: 1rem;
+    font-size: 2vh;
     font-weight: bold;
     margin: 1vh 1vw;
     margin-bottom: 0;
@@ -141,4 +153,22 @@
     margin-bottom: 1.5vh;
     font-size: 0.625rem;
     color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1125px){
+    .alum_parts{
+        place-items: baseline;
+    }
+    .card{
+        height: 100vh;
+        /* flex-wrap: wrap; */
+        display: inline-flex;
+        flex-direction: column;
+        place-content: left;
+        padding-left: 10vw;
+        gap: 2vh;
+    }
+    .about_alum{
+        font-size: 1.6vh
+    }
 }

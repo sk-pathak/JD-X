@@ -98,6 +98,15 @@ body{
     display: flex;
     margin: 4vh;
 }
+.mentor_img :nth-child(1) img{
+    transition-delay: 50ms;
+}
+.mentor_img :nth-child(2) img{
+    transition-delay: 100ms;
+}
+.mentor_img :nth-child(3) img{
+    transition-delay: 150ms;
+}
 .mentor_img p{
     display: flex;
     flex-direction: column;
@@ -110,17 +119,50 @@ body{
 }
 .heading_community h2{
     width: 40%;
-    font-size: 4rem;
+    font-size: 5.5vw;
     font-weight: 700;
     display: inline-block;
     padding-left: 5vw;
 }
 .heading_community h5{
     width: 60%;
-    font-size: 1.6rem;
+    font-size: 2.5vw;
     font-weight: 600;
     display: inline-block;
     text-align: center;
+}
+.community{
+    display: grid;
+    padding-bottom: 3vh;
+}
+@media only screen and (max-width: 992px){
+    .flex_community{
+        flex-direction: column;
+    }
+    .heading_community{
+        display: none;
+    }
+    .community{
+        place-items: center;
+    }
+    .flex_community{
+        align-items: center;
+    }
+    .flex_community img{
+        width: 14vw;
+    }
+    #hide_coordinator{
+        display: none;
+    }
+    .border_com{
+        display: none;
+    }
+}
+@media only screen and (max-width: 604px){
+    .mentors{
+        height: 90vh;
+        padding-bottom: 5vh;
+    }
 }
 /* CONTRIBUTERS */
 .head-cont{
@@ -142,7 +184,6 @@ body{
 .contributors img{
     overflow: hidden;
     position:absolute;
-    transition: transform 0.3s;
 }
 .contributors img:hover{
     transform: scale(1.1);
@@ -190,39 +231,39 @@ body{
     }
 }
 
-.contributors :nth-child(2){
+.contributors :nth-child(2) img{
     transition-delay: 25ms;
 }
-.contributors :nth-child(3){
+.contributors :nth-child(3) img{
     transition-delay: 50ms;
 }
-.contributors :nth-child(4){
+.contributors :nth-child(4) img{
     transition-delay: 75ms;
 }
-.contributors :nth-child(5){
+.contributors :nth-child(5) img{
     transition-delay: 100ms;
 }
-.contributors :nth-child(6){
+.contributors :nth-child(6) img{
     transition-delay: 150ms;
 }
-.contributors :nth-child(7){
+.contributors :nth-child(7) img{
     transition-delay: 200ms;
 }
-.contributors :nth-child(8){
+.contributors :nth-child(8) img{
     transition-delay: 250ms;
 }
-.contributors :nth-child(9){
+.contributors :nth-child(9) img{
     transition-delay: 300ms;
 }
-.contributors :nth-child(10){
+.contributors :nth-child(10) img{
     transition-delay: 350ms;
 }
-.contributors :nth-child(11){
+.contributors :nth-child(11) img{
     transition-delay: 400ms;
 }
-.contributors :nth-child(12){
+.contributors :nth-child(12) img{
     transition-delay: 450ms;
 }
-.contributors :nth-child(13){
+.contributors :nth-child(13) img{
     transition-delay: 500ms;
 }

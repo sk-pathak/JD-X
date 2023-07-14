@@ -3,7 +3,7 @@ const {route} = require("express/lib/application");
 const https = require('https');
 const routes = express.Router();
 
-
+// userinfo
 routes.get('/github/userinfo/:user', async function (req, res) {
     const user = req.params.user;
     const options = {
@@ -18,11 +18,11 @@ routes.get('/github/userinfo/:user', async function (req, res) {
         apiResponse.pipe(res);
     }).on('error', (e) => {
         console.log(e);
-        res.status(500).send('Something wnent wrong!');
+        res.status(500).send('Something went wrong!');
     })
 })
 
-
+// repoinfo
 routes.get('/github/repoinfo/:user/:reponame', async function (req, res) {
     const user = req.params.user;
     const reponame = req.params.reponame;
@@ -38,10 +38,11 @@ routes.get('/github/repoinfo/:user/:reponame', async function (req, res) {
         apiResponse.pipe(res);
     }).on('error', (e) => {
         console.log(e);
-        res.status(500).send('Something wnent wrong!');
+        res.status(500).send('Something went wrong!');
     })
 })
 
+// commitinfo
 routes.get('/github/commitinfo/:user/:reponame', async function (req, res) {
     const user = req.params.user;
     const reponame = req.params.reponame;
@@ -57,16 +58,30 @@ routes.get('/github/commitinfo/:user/:reponame', async function (req, res) {
         apiResponse.pipe(res);
     }).on('error', (e) => {
         console.log(e);
-        res.status(500).send('Something wnent wrong!');
+        res.status(500).send('Something went wrong!');
     })
 })
 
+// repos
+routes.get('/github/userinfo/:user/repos', async function (req, res) {
+    const user = req.params.user;
+    const options = {
+        hostname: 'api.github.com',
+        path: '/users/' + user + '/repos',
+        headers: {
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1521.3 Safari/537.36'
+        },
+        OAUth: "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"
+    }
+    https.get(options, function (apiResponse) {
+        apiResponse.pipe(res);
+    }).on('error', (e) => {
+        console.log(e);
+        res.status(500).send('Something went wrong!');
+    })
+})
 
-
-
-
-
-
+// pages
 routes.get("/", (req, res) => {
     res.render("home");
 });

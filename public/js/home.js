@@ -1,4 +1,4 @@
-fetch("http://localhost:5000/api/github/userinfo/OpenLake")
+fetch("/github/userinfo/OpenLake")
 .then(response => response.json())
 .then(data=>{
     document.getElementById("repos").innerHTML+=data.public_repos;
@@ -10,7 +10,7 @@ fetch("https://api.github.com/orgs/OpenLake/members")
     document.getElementById("mems").innerHTML+=data.length;
 });
 
-fetch("https://api.github.com/users/OpenLake/repos")
+fetch("github/userinfo/OpenLake/repos")
 .then(response => response.json())
 .then(data=>{
     const sum_star = data.reduce((total, repo) => total + repo.stargazers_count, 0);

@@ -2,7 +2,6 @@ const express = require("express");
 const bodyParser = require("body-parser")
 const hbs = require("hbs");
 const app = express();
-
 const routes = require("./routes/main");
 const api = require("./routes/main");
 
