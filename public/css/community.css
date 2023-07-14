@@ -5,11 +5,11 @@ body{
 .team{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+/*     flex-wrap: wrap; */
     width: 100%;
 }
 .head_team{
-    width: 50%;
+    width: 80%;
     display: grid;
     place-content: center;
     align-content: center;
