@@ -159,10 +159,12 @@ body {
 /* css for intro*/
 #bg {
   /* margin-top: 50px; */
-  background-image: url("/resources/Homepage/home_bg.png");
+  background-image: url("/resources/Homepage/center.jpg");
+
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 
 .contain {
   display: flex;
@@ -235,7 +237,7 @@ body {
 }
 
 .highlight {
-  color: blue;
+  color: #1589FF;
   font-size: 60px
 }
 
