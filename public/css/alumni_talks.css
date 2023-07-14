@@ -8,6 +8,32 @@
     margin-top: 4vh;
 }
 
+@media (max-width: 768px) {
+    .alumni_heading {
+        font-size: 8vw;
+    }
+
+    .mySlides img {
+        height: auto;
+        width: 100%;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2vh;
+    }
+
+    .card_content {
+        margin-right: 0;
+        margin-bottom: 2vh;
+    }
+
+    .about_alum {
+        font-size: 0.8rem;
+    }
+}
+
 .at-title{
     font-weight:700;
     font-size: 400%;
@@ -24,7 +50,7 @@
 
 .at-para{
    margin:  2% 10%;
-   font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+   font-family: var(--font);
    font-weight: 100;
 }
 .at-by{
@@ -72,10 +98,14 @@
     scroll-snap-align: start;
     scroll-snap-stop: always;
 }
+#center{
+    place-content: center;
+}
 .alumni_heading{
-    text-align: center;
+    place-self: center;
     font-size: 5vw;
     font-weight: 800;
+    margin-top: 17vh;
 }
 .mySlides{
     display: none;
@@ -86,7 +116,7 @@
 .slideshow-container{
   height: 100vh;
   position: relative;
-  margin: auto;
+  align-self: center;
 }
 .slideshow-container img{
     height: 70vh;
@@ -100,6 +130,43 @@
   from {opacity: .4} 
   to {opacity: 1}
 }
+@media only screen and (max-width: 992px){
+    .alumni_heading{
+        font-size: 6vw;
+    }
+}
+@media only screen and (max-width: 860px){
+    .slideshow-container img{
+        max-width: 70vw;
+        max-height: 60vh;
+    }
+    .slideshow-container{
+        padding-top: 4vh;
+    }
+}
+@media only screen and (max-width: 780px){
+    .slideshow-container img{
+        max-height: 50vh;
+    }
+    .slideshow-container{
+        padding-top: 12vh;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 670px){
+    .slideshow-container img{
+        max-height: 40vh;
+    }
+    .alumni_heading{
+        margin-top: 25vh;
+    }
+}
+@media only screen and (max-width: 500px){
+    .slideshow-container img{
+        max-height: 30vh;
+    }
+}
+
 
 
 
@@ -128,6 +195,7 @@
     border: 0.5px solid gray;
     border-radius: 6%;
     margin-right: 1rem;
+    height: 36vh;
 }
 .card_content:hover{
     transform: scale(1.1);
@@ -156,21 +224,48 @@
     font-size: 0.625rem;
     color: #FFFFFF;
 }
-
+#alum_hidden, #alum_hidden2{
+    display: none;
+}
 @media only screen and (max-width: 1125px){
     .alum_parts{
-        place-items: baseline;
+        place-items: center;
     }
     .card{
         height: 100vh;
-        /* flex-wrap: wrap; */
+        flex-wrap: wrap;
         display: inline-flex;
         flex-direction: column;
-        place-content: left;
-        padding-left: 10vw;
         gap: 2vh;
     }
     .about_alum{
         font-size: 1.6vh
+    }
+    #alum_hidden{
+        display: grid;
+    }
+}
+@media only screen and (max-width: 768px){
+    #alum_hidden2{
+        display: grid;
+    }
+    .card{
+        padding-top: 51vh;
+        flex-wrap: nowrap;
+        margin-bottom: 53vh;
+    }
+    .card_content{
+        margin-bottom: 12vh;
+    }
+    #first{
+        margin-top: 13vh;
+        margin-bottom: 5vh;
+    }
+    #second{
+        margin-top: 13vh;
+        margin-bottom: 0vh;
+    }
+    #third{
+        margin-top: 0vh;
     }
 }

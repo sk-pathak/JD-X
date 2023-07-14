@@ -49,7 +49,7 @@
 
 .about_project_1 {
     font-size: 1.2rem;
-    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-family: var(--font);
     font-weight: 100;
     margin-top: 5vh;
 }

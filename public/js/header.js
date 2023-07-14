@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
     var currentPath = window.location.pathname; 
     var links = document.getElementsByClassName("element");

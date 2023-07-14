@@ -14,7 +14,7 @@
 <body> 
     {{>header}}
 
-    <section class="alum_parts">
+    <section id="center" class="alum_parts">
         <h1 class="hidden alumni_heading">Alumni Talks</h1>
         <div class="slideshow-container">
             <div class="mySlides fade">
@@ -31,7 +31,7 @@
 
     <section class="alum_parts">
         <div class="card">
-            <a href="/alumni_talks_2"><div class="hidden card_content">
+            <a href="/alumni_talks_2"><div id="first" class="hidden card_content">
                 <div class="alum_card_img"><img src="resources/blogs/Rectangle 14.png"></div>
                 <div class="alum_col_line"></div>
                 <div class="heading_alum">Alumni Talks - Seminar 10</div>
@@ -43,7 +43,7 @@
                 <div class="heading_alum">Alumni Talks - Seminar 10</div>
                 <div class="about_alum">By Virat Kohli <br><br> 23 January 2023</div>
             </div></a>
-            <a href="/alumni_talks_2"><div class="hidden card_content">
+            <a href="/alumni_talks_2"><div id="third" class="hidden card_content">
                 <div class="alum_card_img"><img src="resources/blogs/Rectangle 14.png"></div>
                 <div class="alum_col_line"></div>
                 <div class="heading_alum">Alumni Talks - Seminar 10</div>
@@ -58,7 +58,7 @@
                 <div class="heading_alum">Alumni Talks - Seminar 10</div>
                 <div class="about_alum">By Virat Kohli <br><br> 23 January 2023</div>
             </div></a>
-            <a href="/alumni_talks_2"><div class="hidden card_content">
+            <a href="/alumni_talks_2"><div id="second" class="hidden card_content">
                 <div class="alum_card_img"><img src="resources/blogs/Rectangle 14.png"></div>
                 <div class="alum_col_line"></div>
                 <div class="heading_alum">Alumni Talks - Seminar 10</div>
@@ -72,6 +72,8 @@
             </div></a>
         </div>
     </section>
+    <section class="alum_parts" id="alum_hidden"></section>
+    <section class="alum_parts" id="alum_hidden2"></section>
 
     {{>footer}}
 </body>
