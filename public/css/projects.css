@@ -1,4 +1,4 @@
-.projects_bg{
+.projects_backg{
   background-image: url('/resources/project/MacBook Air - 1 (1).png');
   background-color:#1589ff;
   background-size: cover;
@@ -63,7 +63,7 @@
     #project h1{
       font-size: 6vw;
     }
-    .projects_bg{
+    .projects_backg{
       background-size: 160vw;
     background-repeat: no-repeat;
     @media (max-width:500px) {
