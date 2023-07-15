@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
             itemsPerPage = 5;
         }
         let endIndex = 0;
+        showItems();
+    }
 
 
 
@@ -28,6 +30,9 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             let startIndex = currentIndex;
+            if(startIndex+itemsPerPage>length){
+            startIndex = currentIndex-(startIndex+itemsPerPage-length);
+            }
             endIndex = startIndex + itemsPerPage;
 
             // Apply highlighting to the first two items
@@ -73,11 +78,10 @@ document.addEventListener("DOMContentLoaded", function () {
             updateButtons();
         });
 
-        showItems();
+        // showItems();
+        handleSize();
         updateButtons();
 
-    }
-    handleSize();
     window.addEventListener("resize", handleSize);
 
 });
