@@ -1,5 +1,5 @@
-if(!sessionStorage.getItem('doNotShow')){
-    sessionStorage.setItem('doNotShow','true');
+// if(!sessionStorage.getItem('doNotShow')){
+//     sessionStorage.setItem('doNotShow','true');
 
     window.addEventListener('load', function (){
         var content = document.getElementById('init');
@@ -26,9 +26,9 @@ if(!sessionStorage.getItem('doNotShow')){
             main.style.display = 'block';
         }, 3000);
     });
-}
-else{
-    document.head.getElementsByTagName("link")[3].href="";
-    document.getElementById("loader").style.display="none";
-    document.getElementById("main").style.display="unset";
-}
+// }
+// else{
+//     document.head.getElementsByTagName("link")[3].href="";
+//     document.getElementById("loader").style.display="none";
+//     document.getElementById("main").style.display="unset";
+// }
