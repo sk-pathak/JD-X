@@ -76,8 +76,7 @@ To install and set up the JD-X project, follow these steps:
 2. Install the dependencies using npm:
    ```
    cd JD-X
-   npm install nodemon
-   npm install cors
+   npm i
    ```
 
 3. Start the server:
